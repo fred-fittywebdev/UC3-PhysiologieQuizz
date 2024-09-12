@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quiz Physiologie</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Quiz Physiologie</h1>
+		</header>
+
+		<main>
+			<div id="quiz-container">
+				<div id="timer">
+					Temps restant : <span id="time">10:00</span>
+				</div>
+
+				<div id="quiz-selection">
+					<button class="quiz-button" data-quiz="1">
+						Quiz 1 : Niveau facile
+					</button>
+					<button class="quiz-button" data-quiz="2">
+						Quiz 2 : Niveau intermédiaire
+					</button>
+					<button class="quiz-button" data-quiz="3">
+						Quiz 3 : Niveau avancé
+					</button>
+					<button class="quiz-button" data-quiz="random">
+						Quiz Aléatoire
+					</button>
+				</div>
+
+				<div id="quiz-content">
+					<!-- Les questions seront insérées ici dynamiquement -->
+				</div>
+
+				<button id="submit-quiz" style="display: none">
+					Soumettre les réponses
+				</button>
+			</div>
+
+			<div id="results" style="display: none">
+				<h2>Résultats</h2>
+				<div id="score"></div>
+				<div id="feedback"></div>
+				<button id="restart-quiz">Recommencer un quiz</button>
+			</div>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Quiz Nutritionnel. Tous droits réservés.</p>
+		</footer>
+
+		<script src="quiz-data.js"></script>
+		<script src="random-quiz-data.js"></script>
+		<script src="quiz-app.js"></script>
+	</body>
+</html>

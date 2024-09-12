@@ -1,0 +1,185 @@
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 20px;
+	background-color: #f4f4f4;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-top: 50px;
+}
+
+#timer {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#quiz-selection {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.quiz-button {
+	padding: 10px 20px;
+	font-size: 1rem;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.quiz-button:hover {
+	background-color: #0056b3;
+}
+
+#quiz-content h2 {
+	margin-bottom: 10px;
+}
+
+.option {
+	margin-bottom: 10px;
+}
+
+#submit-quiz {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	font-size: 1rem;
+	background-color: #28a745;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#submit-quiz:hover {
+	background-color: #218838;
+}
+
+#results {
+	margin-top: 20px;
+}
+
+.correct {
+	color: #28a745;
+}
+
+.incorrect {
+	color: #dc3545;
+}
+
+#restart-quiz {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	font-size: 1rem;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#restart-quiz:hover {
+	background-color: #45a049;
+}
+
+@media screen and (max-width: 480px) {
+	#restart-quiz {
+		width: 100%;
+	}
+}
+
+footer {
+	text-align: center;
+	margin-top: 20px;
+	color: #666;
+}
+
+/* Pour les tablettes */
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+
+	main {
+		max-width: 90%;
+		padding: 15px;
+	}
+
+	#quiz-selection {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.quiz-button {
+		margin: 5px 0;
+		width: 80%;
+	}
+}
+
+/* Pour les smartphones */
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 12px;
+	}
+
+	header h1 {
+		font-size: 1.5rem;
+	}
+
+	main {
+		max-width: 100%;
+		padding: 10px;
+	}
+
+	.quiz-button {
+		width: 100%;
+	}
+
+	#timer {
+		font-size: 1rem;
+	}
+
+	.option {
+		margin-bottom: 15px;
+	}
+
+	#submit-quiz {
+		width: 100%;
+	}
+}
+
+/* Ajustements pour les appareils très petits */
+@media screen and (max-width: 320px) {
+	body {
+		font-size: 11px;
+	}
+
+	header h1 {
+		font-size: 1.2rem;
+	}
+
+	main {
+		padding: 5px;
+	}
+}
